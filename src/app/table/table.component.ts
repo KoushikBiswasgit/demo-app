@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-table',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
+
+  dtoptions:DataTables.Settings = {};
+  dtTrigger:Subject<any>=new Subject<any>();
+
   constructor() { }
 
   ngOnInit(): void {
+    this.dtoptions = {
+      pagingType: 'full_numbers'
+    }
   }
 
 }

@@ -1,1 +1,329 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+  --font-family-base: "Open Sans", sans-serif;
+  --main-font: "Open Sans", sans-serif;
+  --main-normal: 400;
+  --main-medium: 500;
+  --main-bold: 700;
+  --main-exbold: 900;
+  --base-font-size: 14px;
+  --primary-bg-color: #1a3695;
+
+  --Toolbar-Blue: #11559C;
+  --blue-gray: #C1D3EA;
+  --text-default: #00060F;
+  --blue-lighter: #F5FAFF;
+  --Button-New: #164FBC;
+  --text-highlight: #164FBC;
+
+  --light: #ffffff;
+  --sky: #40a7e2;
+  --purple: #452b90;
+  --dark: #222b40;
+  --green: #0a1506;
+  --blue: #1c2e9e;
+  --red: #C6487E;
+
+  --back-color: #e8e9ec;
+  --primary-color: #000;
+  --header-back: #fff;
+  --header-text: #000;
+  --sidebar-back: #fff;
+  --sidebar-text: #000;
+  --sidebar-text-hover: #f8b940;
+
+
+}
+
+
+
+body {
+  font-family: var(--font-family-base);
+  background: var(--white);
+  color: var(--black);
+  margin: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+input.form-control,
+select.form-select,
+textarea.form-control {
+  border: 0;
+  border-bottom: 1px solid #333;
+  /* background: transparent; */
+  border-radius: 0;
+}
+
+
+
 /* You can add global styles to this file, and also import other style files */
+.dataTables_wrapper .dataTables_length {
+  position: fixed;
+  margin-top: -36px;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  position: fixed;
+  margin-top: -45px;
+  right: 3rem;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  border-radius: 5px !important;
+  border: 1px solid var(--blue-gray) !important;
+  background: var(--white) !important;
+
+}
+
+.dataTables_wrapper .dataTables_info {
+  position: fixed;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  position: fixed;
+  right: 3rem;
+}
+
+
+
+.sidebar {
+  background-color: #333;
+  color: white;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  background: var(--Toolbar-Blue);
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 9;
+}
+
+.main-panel {
+  padding: 10px;
+  /* margin-left: 250px; */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+
+
+
+
+
+.button-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+/* .button-container span {
+        color: #8f8f8f;
+        text-align: right;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .button-container button {
+        font-family: inherit;
+        font-size: inherit;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: 0;
+        margin: 0;
+        outline: 0;
+        border-radius: 0;
+        transition: background-color 225ms ease-out;
+      }
+      .button-container button.primary {
+        background-color: #147eff;
+      }
+      .button-container button.primary:hover {
+        background-color: #479aff;
+      }
+      .button-container button.primary:active {
+        background-color: #0065e0;
+      }
+      .button-container button.primary {
+        background-color: #147eff;
+      }
+      .button-container button.primary:hover {
+        background-color: #479aff;
+      }
+      .button-container button.primary:active {
+        background-color: #0065e0;
+      }
+      .button-container button.danger {
+        background-color: #d11800;
+      }
+      .button-container button.danger:hover {
+        background-color: #ff2205;
+      }
+      .button-container button.danger:active {
+        background-color: #9e1200;
+      }
+      .button-container button svg {
+        fill: #ffffff;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0;
+      } */
+
+.btndefault {
+  display: flex;
+  width: 180px;
+  height: 46px;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 0;
+  margin: 0 3px;
+  outline: 0;
+}
+
+.btn-white {
+  border-radius: 4px;
+  border: 1.5px solid var(--Button-New);
+  background: var(--white);
+  color: var(--Button-New);
+}
+
+.btn-blue {
+  border-radius: 4px;
+  background: var(--Button-New);
+  color: var(--white);
+}
+
+
+
+.page-body-wrapper {
+  /* min-height: calc(100vh - #{$navbar-height}); */
+  /* padding-top: $navbar-height; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-body-wrapper.full-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+.main-panel {
+  /* transition: width $action-transition-duration $action-transition-timing-function, margin $action-transition-duration $action-transition-timing-function; */
+  /* width: calc(100% - #{$sidebar-width-lg}); */
+  /* min-height: calc(100vh - #{$navbar-height}); */
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 991px) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  &.main-panel-only {
+    transition: none;
+  }
+}
+
+.content-wrapper {
+  padding: 2.75rem 2.25rem;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.container-scroller {
+  overflow: hidden;
+}
+
+
+
+/***********upload**************/
+#upload {
+  top: 50%;
+  left: 50%;
+  flex-shrink: 0;
+  /* margin-top: -9em; */
+  /* margin-left: -15em; */
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0px 4px 11px 0px rgba(193, 211, 234, 0.24);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+}
+
+#upload .icon {
+  width: 124px;
+  height: 124px;
+  margin: 0 auto;
+  background-color: #C2D7F9;
+}
+
+#upload p {
+  color: var(--text-default, #00060F);
+  text-align: center;
+
+  /* H6/18 regular */
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#upload .input-group-btn {
+  justify-content: center;
+}
+
+#upload .button-container {
+  justify-content: space-between;
+}
+
+
+
+/*******Table*****/
+
