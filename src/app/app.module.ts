@@ -10,6 +10,9 @@ import { SidebarComponent } from './theme/sidebar/sidebar.component';
 import { NavbarComponent } from './theme/navbar/navbar.component';
 import { SpinnerComponent } from './theme/spinner/spinner.component';
 import { FooterComponent } from './theme/footer/footer.component';
+import { TableTwoComponent } from './table-two/table-two.component';
+import { UploadTwoComponent } from './upload-two/upload-two.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FooterComponent } from './theme/footer/footer.component';
     SidebarComponent,
     NavbarComponent,
     SpinnerComponent,
-    FooterComponent
+    FooterComponent,
+    TableTwoComponent,
+    UploadTwoComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

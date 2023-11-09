@@ -1,0 +1,157 @@
+<div class="container-fluid">
+  <div class="row mt-0">
+    <div class="col-md-12 text-center d-flex align-item-center justify-content-start mb-1 topInfo">
+
+      <form class="form-inline">
+        
+          <label class="control-label mr-2"><strong>Reporting year :</strong></label>
+          <input type="text" readonly class="input-mini mr-4" value="2023-24" >
+          <label class="control-label mr-2"><strong>Authority name:</strong></label>
+          <input type="text" readonly class="input-mini mr-4" value="0" >
+          <label class="control-label mr-2"><strong>GHG Emissions factors:</strong></label>
+          <input type="text"  readonly class="input-mini mr-0" value="" >
+        
+      </form>
+
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-6 text-center d-flex align-item-center justify-content-start mb-2">
+        <div class="logo">
+            <img src="../../assets/img/Picture1.png" alt="logo"/>
+        </div>
+        <div class="logo2">
+            <img src="../../assets/img/Picture2.jpg" alt="logo"/>
+        </div>
+    </div>
+    <div class="col-md-6 text-center d-flex align-item-center justify-content-end mb-2 infoBlock">
+      <form>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-md-4 col-form-label col-form-label-sm">Emission Factor Source</label>
+          <div class="col-md-8 form-data">
+            <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting" target="_blank">https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting</a>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabel" class="col-md-4 col-form-label col-form-label-sm">Latest Publication</label>
+          <div class="col-md-8 form-data">
+            2023-24
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelLg" class="col-md-4 col-form-label col-form-label-sm">Publication Date</label>
+          <div class="col-md-8 form-data">
+            09-11-2023
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="view">
+    <div class="card">
+      <div class="card-body">
+        <div class="table-title">
+          <h2>Table Title</h2>
+        </div>
+        <div class="row mt-2 p-2 align-items-end searchBg">
+          <div class="col-auto">
+            <div class="form-floating">
+              <select class="form-control" id="selectCourses">
+                <option selected>Select Year</option>
+                <option value="2023-24">2023-24</option>
+                <option value="2022-23">2022-23</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="form-floating">
+              <select class="form-control" id="selectCourses">
+                <option selected>Select Scope</option>
+                <option value="scope 1">Scope 1</option>
+                <option value="scope 2">Scope 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="form-floating">
+              <select class="form-control" id="selectCourses">
+                <option selected>Select Emission Type</option>
+                <option value="Heating">Heating</option>
+                <option value="Heating">Heating</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-auto-100">
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+        <div class="wrapper table-concept">
+          <table datatable class="table">
+            <thead>
+              <tr>
+                <th>Scope</th>
+                <th>Emission Type </th>
+                <th>Activity</th>
+                <th>Consumption Units</th>
+                <th>Year</th>
+                <th>Consumption</th>
+                <th>Conversion Factor</th>
+                <th>Emissions (tCO2e)</th>
+                <th>Methodlogy</th>>              
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Heating</td>
+                <td>Gas</td>
+                <td>kWh</td>
+                <td>18-19</td>
+                <td>14671339</td>
+                <td>0.184</td>
+                <td>0.0</td>
+                <td>Energy consumption in kWh multiplied by GHG conversion factor</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Heating</td>
+                <td>Gas</td>
+                <td>kWh</td>
+                <td>18-19</td>
+                <td>14671339</td>
+                <td>0.184</td>
+                <td>0.0</td>
+                <td>Energy consumption in kWh multiplied by GHG conversion factor</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Heating</td>
+                <td>Gas</td>
+                <td>kWh</td>
+                <td>18-19</td>
+                <td>14671339</td>
+                <td>0.184</td>
+                <td>0.0</td>
+                <td>Energy consumption in kWh multiplied by GHG conversion factor</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Heating</td>
+                <td>Gas</td>
+                <td>kWh</td>
+                <td>18-19</td>
+                <td>14671339</td>
+                <td>0.184</td>
+                <td>0.0</td>
+                <td>Energy consumption in kWh multiplied by GHG conversion factor</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

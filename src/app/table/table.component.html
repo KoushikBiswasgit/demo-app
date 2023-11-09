@@ -1,75 +1,244 @@
+
+<div class="container-fluid">
+  <div class="row mt-0">
+    <div class="col-md-12 text-center d-flex align-item-center justify-content-start mb-1 topInfo">
+
+      <form class="form-inline">
+        
+          <label class="control-label mr-2"><strong>Reporting year :</strong></label>
+          <input type="text" readonly class="input-mini mr-4" value="2023-24" >
+          <label class="control-label mr-2"><strong>Authority name:</strong></label>
+          <input type="text" readonly class="input-mini mr-4" value="0" >
+          <label class="control-label mr-2"><strong>GHG Emissions factors:</strong></label>
+          <input type="text"  readonly class="input-mini mr-0" value="" >
+        
+      </form>
+
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-6 text-center d-flex align-item-center justify-content-start mb-2">
+        <div class="logo">
+            <img src="../../assets/img/Picture1.png" alt="logo"/>
+        </div>
+        <div class="logo2">
+            <img src="../../assets/img/Picture2.jpg" alt="logo"/>
+        </div>
+    </div>
+    <div class="col-md-6 text-center d-flex align-item-center justify-content-end mb-2 infoBlock">
+      <form>
+        <div class="form-group row">
+          <label for="colFormLabelSm" class="col-md-4 col-form-label col-form-label-sm">Emission Factor Source</label>
+          <div class="col-md-8 form-data">
+            <a href="https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting" target="_blank">https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting</a>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabel" class="col-md-4 col-form-label col-form-label-sm">Latest Publication</label>
+          <div class="col-md-8 form-data">
+            2023-24
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="colFormLabelLg" class="col-md-4 col-form-label col-form-label-sm">Publication Date</label>
+          <div class="col-md-8 form-data">
+            09-11-2023
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 <div class="view">
   <div class="card">
     <div class="card-body">
       <div class="table-title">
         <h2>Table Title</h2>
       </div>
+      <div class="row mt-2 p-2 align-items-end searchBg">
+        <div class="col-auto">
+          <div class="form-floating">
+            <select class="form-control" id="selectCourses">
+              <option selected>Select Year</option>
+              <option value="2023-24">2023-24</option>
+              <option value="2022-23">2022-23</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="form-floating">
+            <select class="form-control" id="selectCourses">
+              <option selected>Select Scope</option>
+              <option value="scope 1">Scope 1</option>
+              <option value="scope 2">Scope 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="form-floating">
+            <select class="form-control" id="selectCourses">
+              <option selected>Select Group</option>
+              <option value="Group 1">Group 1</option>
+              <option value="Group 2">Group 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-auto-100">
+          <i class="bi bi-search"></i>
+        </div>
+      </div>
       <div class="wrapper table-concept">
         <table datatable class="table">
           <thead>
             <tr>
-              <th class="sticky-col first-col">Fixed Header</th>
-              <th class="sticky-col second-col">Fixed Header</th>
-              <th class="sticky-col third-col">Fixed Header</th>
-              <th class="sticky-col forth-col">Fixed Header</th>
-              <th>Scroll Header</th>
-              <th>Scroll Header</th>
-              <th>Scroll Header</th>
-              <th>Scroll Header</th>
-              <th>Scroll Header</th>
-              <th>Scroll Header</th>
-              <th>Scroll Header</th>
-              <th>Scroll Header</th>
-              <th>Scroll Header</th>
+              <th class="sticky-col first-col">Scope</th>
+              <th class="sticky-col second-col">Group</th>
+              <th class="sticky-col third-col">Summarised Title</th>
+              <th class="sticky-col forth-col">Level 1</th>
+              <th class="sticky-col fifth-col">Level 2</th>
+              <th class="sticky-col six-col">Activity / Source / Material</th>
+              <th class="sticky-col seven-col">Fuel / Method</th>
+              <th class="sticky-col eight-col">Unit of Measurement</th>
+              <th class="sticky-col nine-col">GHG/kWh</th>              
+              <th>2023-24</th>
+              <th>2014-15</th>
+              <th>2015-16</th>
+              <th>2016-17</th>
+              <th>2017-18</th>
+              <th>2018-19</th>
+              <th>2019-20</th>
+              <th>2020-21</th>
+              <th>2021-22</th>
+              <th>2022-23</th>
+              <th>2023-24</th>
+              <th>2024-25</th>
+              <th>2025-26</th>
+              <th>20226-27</th>
+              <th>2027-28</th>
+              <th>BEIS Concatenated Title</th>
+              <th>Internal ID</th>
+              <th>GHG Conversion Factor 2017</th>              
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="sticky-col first-col">Fixed Data</td>
-              <td class="sticky-col second-col">Fixed Data</td>
-              <td class="sticky-col third-col">Fixed Data</td>
-              <td class="sticky-col forth-col">Fixed Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
+              <td class="sticky-col first-col">Scope 3</td>
+              <td class="sticky-col second-col">Heating </td>
+              <td class="sticky-col third-col">Natural Gas</td>
+              <td class="sticky-col forth-col">Fuels</td>
+              <td class="sticky-col fifth-col">Gaseous fuels</td>
+              <td class="sticky-col six-col">Natural gas</td>
+              <td class="sticky-col seven-col"></td>
+              <td class="sticky-col eight-col">kWh (Gross CV)</td>
+              <td class="sticky-col nine-col">kg CO2e</td>
+              <td>0.1829</td>
+              <td>0.1850</td>
+              <td>0.1845</td>
+              <td>0.1840</td>
+              <td>0.1842</td>
+              <td>0.1840</td>
+              <td>0.1839</td>
+              <td>0.1839</td>
+              <td>0.1832</td>
+              <td>0.1825</td>
+              <td>0.1825</td>
+              <td>0.1825</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Scope 1FuelsGaseous fuelsNatural gaskWh (Gross CV)kg CO2e</td>
+              <td>Scope 1HeatingNatural GaskWh (Gross CV)</td>
+              <td></td>
             </tr>
             <tr>
-              <td class="sticky-col first-col">Fixed Data</td>
-              <td class="sticky-col second-col">Fixed Data</td>
-              <td class="sticky-col third-col">Fixed Data</td>
-              <td class="sticky-col forth-col">Fixed Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
+              <td class="sticky-col first-col">Scope 3</td>
+              <td class="sticky-col second-col">Heating </td>
+              <td class="sticky-col third-col">Natural Gas</td>
+              <td class="sticky-col forth-col">Fuels</td>
+              <td class="sticky-col fifth-col">Gaseous fuels</td>
+              <td class="sticky-col six-col">Natural gas</td>
+              <td class="sticky-col seven-col"></td>
+              <td class="sticky-col eight-col">kWh (Gross CV)</td>
+              <td class="sticky-col nine-col">kg CO2e</td>
+              <td>0.1829</td>
+              <td>0.1850</td>
+              <td>0.1845</td>
+              <td>0.1840</td>
+              <td>0.1842</td>
+              <td>0.1840</td>
+              <td>0.1839</td>
+              <td>0.1839</td>
+              <td>0.1832</td>
+              <td>0.1825</td>
+              <td>0.1825</td>
+              <td>0.1825</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Scope 1FuelsGaseous fuelsNatural gaskWh (Gross CV)kg CO2e</td>
+              <td>Scope 1HeatingNatural GaskWh (Gross CV)</td>
+              <td></td>
             </tr>
             <tr>
-              <td class="sticky-col first-col">Fixed Data</td>
-              <td class="sticky-col second-col">Fixed Data</td>
-              <td class="sticky-col third-col">Fixed Data</td>
-              <td class="sticky-col forth-col">Fixed Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
-              <td>Scroll Data</td>
+              <td class="sticky-col first-col">Scope 3</td>
+              <td class="sticky-col second-col">Heating </td>
+              <td class="sticky-col third-col">Natural Gas</td>
+              <td class="sticky-col forth-col">Fuels</td>
+              <td class="sticky-col fifth-col">Gaseous fuels</td>
+              <td class="sticky-col six-col">Natural gas</td>
+              <td class="sticky-col seven-col"></td>
+              <td class="sticky-col eight-col">kWh (Gross CV)</td>
+              <td class="sticky-col nine-col">kg CO2e</td>
+              <td>0.1829</td>
+              <td>0.1850</td>
+              <td>0.1845</td>
+              <td>0.1840</td>
+              <td>0.1842</td>
+              <td>0.1840</td>
+              <td>0.1839</td>
+              <td>0.1839</td>
+              <td>0.1832</td>
+              <td>0.1825</td>
+              <td>0.1825</td>
+              <td>0.1825</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Scope 1FuelsGaseous fuelsNatural gaskWh (Gross CV)kg CO2e</td>
+              <td>Scope 1HeatingNatural GaskWh (Gross CV)</td>
+              <td></td>
             </tr>
-
+            <tr>
+              <td class="sticky-col first-col">Scope 3</td>
+              <td class="sticky-col second-col">Heating </td>
+              <td class="sticky-col third-col">Natural Gas</td>
+              <td class="sticky-col forth-col">Fuels</td>
+              <td class="sticky-col fifth-col">Gaseous fuels</td>
+              <td class="sticky-col six-col">Natural gas</td>
+              <td class="sticky-col seven-col"></td>
+              <td class="sticky-col eight-col">kWh (Gross CV)</td>
+              <td class="sticky-col nine-col">kg CO2e</td>
+              <td>0.1829</td>
+              <td>0.1850</td>
+              <td>0.1845</td>
+              <td>0.1840</td>
+              <td>0.1842</td>
+              <td>0.1840</td>
+              <td>0.1839</td>
+              <td>0.1839</td>
+              <td>0.1832</td>
+              <td>0.1825</td>
+              <td>0.1825</td>
+              <td>0.1825</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Scope 1FuelsGaseous fuelsNatural gaskWh (Gross CV)kg CO2e</td>
+              <td>Scope 1HeatingNatural GaskWh (Gross CV)</td>
+              <td></td>
+            </tr>
           </tbody>
         </table>
       </div>
