@@ -332,3 +332,45 @@ textarea.form-control {
 #upload .btn-file{
   width: 360px;
 }
+
+
+
+
+.table{
+  display: table !important;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  /* border-spacing: 2px; */
+  /* border-color: gray; */
+}
+thead{
+  display: table-header-group !important;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.table>thead>tr{
+  display: table-row !important;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+.table>thead tr th{
+  vertical-align: inherit;
+  display: table-cell !important;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+tbody{
+  display: table-row-group !important;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.table>tbody tr{
+  display: table-row !important;
+    width: 100% !important;
+}
+
+.table>tbody tr td {
+  padding: 5px;
+  display: table-cell !important;
+}
