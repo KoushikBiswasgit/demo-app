@@ -85,7 +85,7 @@ textarea.form-control {
 .dataTables_wrapper .dataTables_filter {
   position: fixed;
   margin-top: -45px;
-  right: 3rem;
+  right: 4rem;
 }
 
 .dataTables_wrapper .dataTables_filter input {
@@ -101,10 +101,12 @@ textarea.form-control {
 
 .dataTables_wrapper .dataTables_paginate {
   position: fixed;
-  right: 3rem;
+  right: 4rem;
 }
 
-
+.card{
+  box-shadow: 0px 4px 11px 4px rgba(193, 211, 234, 0.24);
+}
 
 .sidebar {
   background-color: #333;
@@ -211,8 +213,8 @@ textarea.form-control {
 
 .btndefault {
   display: flex;
-  width: 180px;
-  height: 46px;
+  /* width: 180px; */
+  /* height: 46px; */
   padding: 12px 32px;
   justify-content: center;
   align-items: center;
@@ -234,7 +236,12 @@ textarea.form-control {
   background: var(--Button-New);
   color: var(--white);
 }
-
+.btn-file{
+  border-radius: 4px;
+  border: 1.5px solid var(--Button-New);
+  background: var(--white);
+  color: var(--Button-New);
+}
 
 
 .page-body-wrapper {
@@ -290,7 +297,7 @@ textarea.form-control {
   /* margin-left: -15em; */
   border-radius: 12px;
   background: var(--white);
-  box-shadow: 0px 4px 11px 0px rgba(193, 211, 234, 0.24);
+  box-shadow: 0px 4px 11px 4px rgba(193, 211, 234, 0.24);
   position: absolute;
   transform: translate(-50%, -50%);
   padding: 15px;
