@@ -104,6 +104,10 @@ textarea.form-control {
   right: 4rem;
 }
 
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+  padding: 2px 6px !important;
+}
+
 .card{
   box-shadow: 0px 4px 11px 4px rgba(193, 211, 234, 0.24);
 }
@@ -302,8 +306,8 @@ textarea.form-control {
 }
 
 #upload .icon {
-  width: 124px;
-  height: 124px;
+  width: 160px;
+  height: 160px;
   margin: 0 auto;
   background-color: #C2D7F9;
 }
@@ -325,5 +329,6 @@ textarea.form-control {
   justify-content: space-between;
 }
 
-
-
+#upload .btn-file{
+  width: 360px;
+}
