@@ -8,8 +8,8 @@ import { UploadTwoComponent } from './upload-two/upload-two.component';
 const routes: Routes = [
   { path: 'ghg-factors-upload', component: HomeComponent },
   { path: 'lga-and-sc-summary-upload', component: UploadTwoComponent },
-  { path: 'ghc-factors-list', component: TableComponent },
-  { path: 'lga-and-sc-summary-list', component: TableTwoComponent },
+  { path: 'ghg-factors-list', component: TableComponent },
+  { path: 'emissions-calculations', component: TableTwoComponent },
   { path: '', redirectTo: '/ghg-factors-upload', pathMatch: 'full' }, // Default route
   { path: '**', redirectTo: '/ghg-factors-upload' }, // Wildcard route (404)
 
